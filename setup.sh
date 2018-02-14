@@ -3,6 +3,7 @@ baselocation=$PWD
 apt-get update
 apt-get install libasound2-dev memcached python-pip mpg123 python-alsaaudio python-aubio
 pip install -r requirements.txt
+pip2 install python_vlc
 cp initd_alexa.sh /etc/init.d/alexa
 cd /etc/rc5.d
 ln -s ../init.d/alexa S99alexa
